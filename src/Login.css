@@ -1,0 +1,114 @@
+/* Nosso reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    width: 900px; /* Ajuste para ocupar espaço horizontal */
+    height: 450px; /* Ajuste para ocupar espaço vertical */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Aqui é a nossa página de Boas-Vindas */
+.welcome-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Aumentei o padding para caber mais nosso conteúdo */
+    border-radius: 10px 0 0 10px;
+}
+
+.welcome-section h1 {
+    font-size: 32px; /* tamanho do texto */
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 16px; /* Tamanho do texto */
+    color: #777777;
+}
+
+/* Parte Do login */
+.login-section {
+    flex: 1;
+    background-color: #2d3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; 
+    border-radius: 0 10px 10px 0;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px; /* Tamanho da logo */
+    height: auto;
+}
+
+form {
+    width: 100%;
+    max-width: 320px; /* Tamanho do formulário */
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #bdc3c7;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #16a085;
+}
+
